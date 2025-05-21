@@ -12,10 +12,10 @@ target: '18S Ribosomal RNA [NCIT:C48172]'
 creator: 'Shannon Brown, Han Weinrich, Zachary Gold'
 materials_required: 'vortexer [OBI:0400118], PCR instrument [OBI:0000989]'
 skills_required: 'sterile technique, pipetting skills, and standard molecular technique'
-time_required: 210
+time_required: 180
 personnel_required: 1
 language: en
-issued: '2025-05-01'
+issued: '2025-05-21'
 audience: 'scientists'
 publisher: 'NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies'
 hasVersion: 1
@@ -27,7 +27,7 @@ pcr_0_1: 1
 inhibition_check_0_1: not applicable
 inhibition_check: not applicable
 thermocycler: Applied Biosystems Veriti 96-well thermal cycler
-assay_name: ssu18sv8_machida
+assay_name: ssu18sv8_machida_OSUmod
 assay_validation: The assay has been validated through mutli-step in-silico, in-vitro, and in-situ validations. In addition to repeat analysis with alternate assays and intra/inter species tests. See BeBOP for citations.
 targetTaxonomicAssay: "18S rRNA gene sequencing targeting the V8 region using primers Machida 18S #3 F and Machida 18S #5 R"
 targetTaxonomicScope: metazoan organisms
@@ -40,27 +40,27 @@ pcr_primer_name_forward: Machida_18S V78 F
 pcr_primer_name_reverse: Machida_18S V78 R
 pcr_primer_reference_forward: https://doi.org/10.1371/journal.pone.0134314
 pcr_primer_reference_reverse: https://doi.org/10.1371/journal.pone.0134314
-pcr_primer_vol_forward: 0.6
-pcr_primer_vol_reverse: 0.6
-pcr_primer_conc_forward: 5.0
-pcr_primer_conc_reverse: 5.0
+pcr_primer_vol_forward: 5.0
+pcr_primer_vol_reverse: 5.0
+pcr_primer_conc_forward: 1.0
+pcr_primer_conc_reverse: 1.0
 probeReporter: not applicable
 probeQuencher: not applicable
 probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
-commercial_mm: not applicable 
-custom_mm: PCR reactions were run in 15 uL reaction volumes, with 1 uL of DNA, 9.8 µl of sterile distilled H2O, 1.5 µl of 10×2 SA PCR buffer (Clontech), 1.2 µl of dNTP (2.5 mM each), 0.6 µl of each primer (5 µM), 0.3 µl of Advantage 2 DNA Polymerase Mix (Clontech).
+commercial_mm: 2x KAPA HiFi HotStart Ready Mix 
+custom_mm: PCR reactions were run in 25 μL reaction volumes, with 2.5 μL of DNA, 12.5 μL 2x KAPA HiFi HotStart Ready Mix, and  5 μL of each primer (1 μM).
 block_seq: not applicable
 block_ref: not applicable
 block_taxa: not applicable
-amplificationReactionVolume: 15
+amplificationReactionVolume: 25
 pcr_dna_vol: 2.0
 pcr_rep: 1.0
-nucl_acid_amp: https://doi.org/10.5281/zenodo.11398146
-pcr_cond: initial denaturation:95_10;normal_cycling;denaturation:95_0.166;annealing:55_0.5;elongation:72_1;30
+nucl_acid_amp:
+pcr_cond: initial denaturation:95_3;normal_cycling;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;25
 annealingTemp: 55
-pcr_cycles: 30
+pcr_cycles: 25
 pcr_analysis_software: missing":" not provided
 pcr_method_additional: Quality was validated via confirmation of a product on a gel.
 ---
@@ -88,12 +88,10 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-|Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2024-02-01|
-|Han Weinrich  | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0009-0007-6063-0986 |2024-02-01|
-|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2024-02-01|
 |Matt Galaska	|Ocean Molecular Ecology, NOAA PMEL|	0000-0002-4257-0170	|2024-02-01|
-|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630	|2024-02-01|
-|Brynn Zalmanek	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0009-0004-8906-5907	|2025-04-30|
+|Sean McAllister	|Ocean Molecular Ecology, NOAA PMEL & UW CICOES	|0000-0001-6654-3495	|2024-02-01|
+|Shannon Brown | Ocean Molecular Ecology, NOAA PMEL & UW CICOES  | 0000-0001-9808-2638 |2025-05-01|
+|Zachary Gold	|Ocean Molecular Ecology, NOAA PMEL	|0000-0003-0490-7630	|2025-05-01|
 
 ### Related Protocols
 
@@ -104,8 +102,7 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| OME Gel electrophoresis protocol (in progress)  | Pending | 0.0 | yyyy-mm-dd   | Internal  |
-| Content Cell  | Content Cell | Content Cell | yyyy-mm-dd   | Content Cell      |
+| Illumina 16S Metagenomic Sequencing Library Preparation | [Link](https://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) | 15044223 B | 2013-11-27  | External  |
 
 
 ### Protocol Revision Record
@@ -116,8 +113,8 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0 | 2024-02-01 | Initial release |
-| 1.1.0 | 2025-05-01 | Addition of FAIR eDNA terms in YAML frontmatter and formatting edits |
+| 1.0.0 | 2025-05-01 | Initial release |
+| 1.1.0 | 2025-05-21 |  Formatting edits, content revisions, and FAIRe updates  |
 
 ### Acronyms and Abbreviations
 
@@ -125,20 +122,15 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 | ------------- | ------------- |
 |18S V8 rRNA gene|18S ribosomal nucleic acid sequencing assay targeting V8 gene region |
 |BSC	|Biosafety cabinet|
-|CICOES| Cooperative Institute for Climate, Ocean, & Ecosystem Studies
 |eDNA	|environmental DNA|
 |EtOH| Ethanol|
 |IDT| Integrated DNA Technologies
 |MBARI| Monterey Bay Aquarium Research Institute|
 |MBON	|Marine Biodiversity Observation Network|
-|NOAA|National Oceanic and Atmospheric Administration|
 |NTC	|No template control
-|OME	|Ocean Molecular Ecology
+| OSU | Oregon State University |
 |PCR| Polymerase chain reaction |
-|PMEL	|Pacific Marine Environmental Laboratory|
 |PPE    | Personal protective equipment |
-|UW| University of Washington
-|WC-OBON|West Coast Ocean Biomolecular Observing Network|
 
 ### Glossary
 
@@ -161,7 +153,7 @@ The protocol presented here is intended as the first PCR of a two-step PCR next 
 
 ### Method Description and Rationale
 
-This protocol was chosen because it has been used by the Arctic Marine Biodiveristy Observation Netowrk (AMBON) as well as MBON, a leader in the field of eDNA research and an important partner in the Arctic/Alaska region, to generate marine eDNA time series. Our protocol uses the same polymerase, and thermocycling conditions as MBARI and MBON 16S v4 protocol, but is only 25 µL in total reaction volume. We intentionally chose this protocol to promote standardization of ocean biomolecular observations and easily facilitate integration of PMEL OME eDNA data with AMBON eDNA time series.
+This primers were chosen because they are used by the Arctic Marine Biodiveristy Observation Netowrk (AMBON) as well as MBON, a leader in the field of eDNA research and an important partner in the Arctic/Alaska region, to generate marine eDNA time series. Work was completed at _______________.
 
 This amplification protocol is accessible to most molecular biology labs.
 
@@ -199,8 +191,8 @@ For a 96-well Plate:
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment**|
 |Pipetter: 1-10 μl|Pipetman P10L|Gilson|1|Can be substituted with any accurate pipettor|
-|Pipetter: 20 - 200 uL	|Pipetman P200L|Gilson|	1|Can be substituted with any accurate pipettor|
-|Pipetter: 100-1000 uL	|Pipetman P1000	|Gilson	|1|Can be substituted with any accurate pipettor|
+|Pipetter: 20 - 200 μL	|Pipetman P200L|Gilson|	1|Can be substituted with any accurate pipettor|
+|Pipetter: 100-1000 μL	|Pipetman P1000	|Gilson	|1|Can be substituted with any accurate pipettor|
 |BioSafety II cabinet|Biological safety cabinet (INT-1100A2)|Kewaunee|1|Can be substituted with generic - internal UV light required|
 |Thermocycler|Veriti 96-well thermal cycler |Applied Biosystems| 1|	Can be substituted with generic|
 | Mini-centrifuge | Personal mini centrifuge  | BioExcell | 1 | Can be substituted with generic, but needs to fit 1.5-2.0 mL tubes |
@@ -217,6 +209,7 @@ For a 96-well Plate:
 |Fridge| Refrigerator capable of reaching and maintaining 4°C|Generic|1|Used to store some PCR reagents **NOTE: A separate fridge should be used to hold PCR products if possible.**|
 |Trash bag holder|Bel-Art scienceware bench-top biohazard holders|Fisher Scientific|1|Can be substituted with generic|
 |Cryoboxes|TruCool hinged lid cryoboxes|VWR|2| Can be substituted with generic - must be sterilized before use |
+|BluePippin|BluePippin System BLU0001|Sage Science|1| |
 | **Consumable equipment** |
 | 1000 μL pipette tips | TipOne RPT filter tips 1000 μL XL graduated | USA Scientific | 4 | Can be subsituted with generic - must be sterile and filtered |
 | 200 μL pipette tips  | TipOne RPT filter tips 200 μL graduated| USA Scientific |4 | Can be subsituted with generic - must be sterile and filtered |
@@ -236,31 +229,27 @@ For a 96-well Plate:
 |8-channel multichannel pipetter: 1-10 μL| Pipetman Multichannel P8X10|	Gilson|	1|Can be substituted with generic. Not required but reduces protocol time.|
 | UV crosslinker | UV crosslinker AH (115V), 234100 | Boekel Scientific  | 1 | Can be substituted with generic - recommended not required |
 | **Chemicals** |
-| PCR Taq Polymerase 2x| Clontech Labs 3P Advantage® 2 Polymerase Mix, 100 Rxns (Cat_No:639201) | Clontech Labs | 31.2 μl per plate | Store at -20°C |
-| 10X Advantage® 2 PCR Buffer| Clontech Labs 10X Advantage® 2 PCR Buffer, 2 x 600 uL (Cat_No: 639137) | Clontech Labs | 144 μl per plate | Store at -20°C |
-| Forward primer | Custom oligo | IDT |78 μl per plate| Store at -20°C|
-| Reverse primer| Custom oligo | IDT | 78 μl per plate | Store at -20°C|
-| Nuclease free water | UltraPure DNase/RNase-free distilled water | ThermoFisher | 1196 μl per plate|
+| PCR master mix 2x | 2x KAPA HiFi HotStart ReadyMix | Roche Diagnostics | 1300 μl per plate | Store at -20°C |
+| Forward primer | Custom oligo | IDT |520 μl per plate| Store at -20°C|
+| Reverse primer| Custom oligo | IDT | 520 μl per plate | Store at -20°C|
 | Camel Positive control| Zyagen Labs CAMEL control genomic DNA, in TE buffer | IDT | 2 μl per plate | Store at -20°C |
 | Ferret Positive control| Zyagen Labs FERRET control genomic DNA, in TE buffer | IDT | 2 μl per plate | Store at -20°C |
+| 10 mM Tris | 10 mM Tris pH 8.5 | Fisher Scientific | 5040 μl per plate (for clean-up) | Store at -20°C|
+| AMPure beads | AMPure XP beads | Fisher Scientific | 1920 μl per plate (for clean-up) | Store at fridge|
 | 70% EtOH | Molecular grade ethanol| Generic | 40 mL |
 | 10% bleach| Hypochlorite bleach |Clorox| 40 mL | Remake every ~5 days as bleach decomposes quickly at 10% concentration |
 
+
 ## STANDARD OPERATING PROCEDURE
 
-### Protocol
+### Preparation
 
-#### Preparation
+1. Sterilize workspaces and durable equipment, including pipettes with 10% bleach. Then wipe down all surfaces and equipment with 70% EtOH.
+2. Label all PCR plates both on the side of the plate and on the top of the foil (in the plate margins). Recommended labeling scheme includes plate name, primer, date of PCR, and personnel initials.
 
-1. Sterilize workspaces and durable equipment, including pipettes within the BSC with 10% bleach. Then wipe down all surfaces and equipment with 70% EtOH.
-2. If you have a UV crosslinker available, UV pipettes and tube racks regularly for 2 minutes. 
-3. Run the UV light in the BSC for 30 minutes before starting work.
-4. Label all PCR plates both on the side of the plate and on the top of the foil (in the plate margins). Recommended labeling scheme includes plate name, primer, date of PCR, and personnel initials.
+### PCR
 
-
-#### PCR
-
-**Primer Sequences without Adapters**: PCR primer sequences (target sequence bolded)
+**Primer Sequences without Adapters**: PCR primer sequences (**target sequence bolded**)
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
@@ -278,25 +267,25 @@ For a 96-well Plate:
 
 | Reagent |Volume (μL) per plate| Volume (μL) per reaction | Intial concentration| Final concentration|
 | ----- | ----- | ----- |----- |-----|
-|2x KAPA HiFi HotStart Ready Mix  |1350|  12.5|100% | 50%|
-| Forward Primer| 540| 5|1 μM | 5 μM |
-| Reverse Primer |540| 5|1 μM |5 μM |
+|2x KAPA HiFi HotStart Ready Mix  |1300|  12.5|100% | 50%|
+| Forward Primer| 520| 5|1 μM | 5 μM |
+| Reverse Primer |520| 5|1 μM |5 μM |
 | Template DNA|N/A| 2.5 | 100%|10% |
-| **Total**|**2430**| **25** | **N/A** |**N/A**|
+| **Total**|**2340**| **25** | **N/A** |**N/A**|
 
+This table breaks down the mixture per plate and per reaction. When running full plates (96-wells), each reagent volume was multipled by 104 (96+8 extra sample volumes to account for pipetting error) when preparing the final master mix.
 
 **PCR Cycling Program**:
 
 | PCR step | Temperature | Duration | Repetition |
 | ----- | ----- | ----- | ----- |
-|Initial denaturation|	95°C	|10min|	1X
+|Initial denaturation|	95°C	|3 min|	1X
 |**Normal Cycling**||||
-|Denaturation|	95°C|	45s|	25X |
-|Annealing|	55°C|	45s	| 25X |
-|Extension 	|68°C	|90s	|25X|
-|Final extension	|68°C	| 5min	|1X|
+|Denaturation|	95°C|	30s|	25X |
+|Annealing|	55°C|	30s	| 25X |
+|Extension 	|72°C	|30s	|25X|
+|Final extension	|72°C	| 5min	|1X|
 |Hold	|4°C	|∞	|1X|
-
 
 **Step-by-Step Instructions:**
 
@@ -311,13 +300,31 @@ For a 96-well Plate:
 7. To one well each, add 2.5 μL of the positive control and 2.5 μL of nuclease-free water for the NTC.
 8. Seal the PCR plate with foil.
 9. Spin down the plate, and then transport in cooler blocks before placing in thermocycler.
-10.  Run thermocycler protocol.
+10. Run thermocycler protocol.
 11. PCRs were run in triplicate for each sample and then pooled evenly by volume.
 
 ### Quality control
 
 1. Plates should be removed from the thermocycler  after the run completes and stored at 4°C until run on a gel. Storing the PCR product at -20˚C is ideal for 1-6 month term storage, while -80˚C is ideal for long-term storage.
-2. Run gel visualization to confirm successful PCR. [NOAA-PMEL-OME-GelVisualization-Protocol pending]
+
+### PCR Clean-up
+
+Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, if available, BluePippin size selection was used to purify the amplicon. When unavailable, the below protocol was AMPure XP beads was used.
+
+1. Centrifuge the Amplicon PCR plate at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
+2. Vortex the AMPure XP beads for 30 seconds to make sure that the beads are evenly dispersed. Add an appropriate volume of beads to a trough depending on the number of samples processing.
+3. Using a multichannel pipette, add 20 µl of AMPure XP beads to each well of the Amplicon PCR plate. Change tips between columns.
+4. Gently pipette entire volume up and down 10 times if using a 96‐well PCR plate or seal plate.
+5. Incubate at room temperature without shaking for 5 minutes.
+6. Place the plate on a magnetic stand for 2 minutes or until the supernatant has cleared.
+7. With the Amplicon PCR plate on the magnetic stand, use a multichannel pipette to remove and discard the supernatant. Change tips between samples.
+8.  With the Amplicon PCR plate on the magnetic stand, wash the beads with freshly prepared 80% ethanol as follows: (a) Using a multichannel pipette, add 200 µl of freshly prepared 80% ethanol to each sample well. (b) Incubate the plate on the magnetic stand for 30 seconds. (c) Carefully remove and discard the supernatant.
+9.  With the Amplicon PCR plate on the magnetic stand, perform a second ethanol wash as follows:(a) Using a multichannel pipette, add 200 µl of freshly prepared 80% ethanol to each sample well. (b) Incubate the plate on the magnetic stand for 30 seconds. (c) Carefully remove and discard the supernatant. (d) Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
+10.  With the Amplicon PCR plate still on the magnetic stand, allow the beads to air‐dry for 10 minutes.
+11.  Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 52.5 µl of 10 mM Tris pH 8.5 to each well of the Amplicon PCR plate.
+12.  Gently pipette mix up and down 10 times, changing tips after each column. Make sure that beads are fully resuspended. Incubate at room temperature for 2 minutes.
+13.  Place the plate on the magnetic stand for 2 minutes or until the supernatant has cleared.
+14.  Using a multichannel pipette, carefully transfer 50 µl of the supernatant from the Amplicon PCR plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
 #### Positive Control
 A positive control is used in every PCR run to verify success of the PCR reaction. 2μL of both Camel and Ferret positive control at 0.5mg/ml were used in place of template DNA. One well per plate per positive control is alotted. 
@@ -349,4 +356,3 @@ Nuclease-free water is used as a no template control (NTC) when setting up each 
 1. Machida, R. J., & Knowlton, N. (2012). PCR Primers for Metazoan Nuclear 18S and 28S Ribosomal DNA Sequences. PloS One, 7(9), e46180–e46180. https://doi.org/10.1371/journal.pone.0046180
 
 ## APPENDIX A: DATASHEETS
-Protocol Sample Sheet: [Machida Metazoan 18S V8 PCR Protocol Sheet Draft](https://docs.google.com/spreadsheets/d/14exlweJkmsPSTahdmubbECPgm2iUhXlben1yksLek1Y/edit#gid=1701210116)
