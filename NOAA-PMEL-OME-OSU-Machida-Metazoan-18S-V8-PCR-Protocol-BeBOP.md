@@ -5,8 +5,8 @@ project: NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Gr
 purpose: 'PCR [OBI:0000415]'
 analyses: 'PCR [OBI:0000415]'
 geographic_location: 'North East Pacific Ocean [GAZ:00013765], Bering Sea [GAZ:00008990], Arctic Ocean [GAZ:00000323]'
-broad_scale_environmental_context: 'marine biome [ENVO:00000447], marine benthic biome [ENVO:01000024]'
-local_environmental_context: 'oceanic epipelagic zone biome [ENVO:01000035], marine biome [ENVO:00000447], marine benthic biome [ENVO:01000024]'
+broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+local_environmental_context: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
 environmental_medium: 'sea water [ENVO:00002149]'
 target: '18S Ribosomal RNA [NCIT:C48172]'
 creator: 'Shannon Brown, Han Weinrich, Zachary Gold'
@@ -26,9 +26,9 @@ maturity level: mature
 pcr_0_1: 1
 inhibition_check_0_1: not applicable
 inhibition_check: not applicable
-thermocycler: Applied Biosystems Veriti 96-well thermal cycler
+thermocycler: Generic thermal cycler
 assay_name: ssu18sv8_machida_OSUmod
-assay_validation: The assay has been validated through mutli-step in-silico, in-vitro, and in-situ validations. In addition to repeat analysis with alternate assays and intra/inter species tests. See BeBOP for citations.
+assay_validation: This assay was validated by Oregon State University's Center for Quantitative Life Sciences via mutli-step in-silico, in-vitro, and in-situ validations 
 targetTaxonomicAssay: "18S rRNA gene sequencing targeting the V8 region using primers Machida 18S #3 F and Machida 18S #5 R"
 targetTaxonomicScope: metazoan organisms
 target_gene: 18S
@@ -114,7 +114,7 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-05-01 | Initial release |
-| 1.1.0 | 2025-05-21 |  Formatting edits, content revisions, and FAIRe updates  |
+| 1.1.0 | 2025-05-21 | Content revisions, format editing, and FAIRe updates  |
 
 ### Acronyms and Abbreviations
 
@@ -122,15 +122,16 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 | ------------- | ------------- |
 |18S V8 rRNA gene|18S ribosomal nucleic acid sequencing assay targeting V8 gene region |
 |BSC	|Biosafety cabinet|
+|CQLS	|Center for Quantitative Life Sciences|
 |eDNA	|environmental DNA|
 |EtOH| Ethanol|
 |IDT| Integrated DNA Technologies
 |MBARI| Monterey Bay Aquarium Research Institute|
 |MBON	|Marine Biodiversity Observation Network|
 |NTC	|No template control
-| OSU | Oregon State University |
+|OSU | Oregon State University |
 |PCR| Polymerase chain reaction |
-|PPE    | Personal protective equipment |
+|PPE| Personal protective equipment |
 
 ### Glossary
 
@@ -145,7 +146,7 @@ pcr_method_additional: Quality was validated via confirmation of a product on a 
 
 ### Summary
 
-This protocol is for amplifying the Small subunit ribosomal ribonucleic acid (SSU rRNA) 18S v8 gene in eukaryotes. The primers (forward: Machida 18S #3 F, reverse: Machida 18S #5 R) were first presented in [Machida & Nowlton 2012](https://doi.org/10.1371/journal.pone.0046180). The target amplicon size is ~380 base pairs.
+This protocol is for amplifying the small subunit ribosomal ribonucleic acid (SSU rRNA) 18S v8 gene in eukaryotes. The primers (forward: Machida 18S #3 F, reverse: Machida 18S #5 R) were first presented in [Machida & Nowlton 2012](https://doi.org/10.1371/journal.pone.0046180). The target amplicon size is ~380 base pairs.
 
 This primer set targets metazoan organisms (e.g., molluscs, arthropods, and vertebrates). Important note, this primer also amplifies non-target organisms including single-celled phytoplankton (e.g., dinoflagellates, diatoms, and haptophytes).
 
@@ -153,13 +154,13 @@ The protocol presented here is intended as the first PCR of a two-step PCR next 
 
 ### Method Description and Rationale
 
-This primers were chosen because they are used by the Arctic Marine Biodiveristy Observation Netowrk (AMBON) as well as MBON, a leader in the field of eDNA research and an important partner in the Arctic/Alaska region, to generate marine eDNA time series. Work was completed at _______________.
+This primers were chosen because they are used by the Arctic Marine Biodiveristy Observation Netowrk (AMBON) as well as MBON, a leader in the field of eDNA research and an important partner in the Arctic/Alaska region, to generate marine eDNA time series. Work was completed at the Center for Quantitative Life Sciences (CQLS) at Oregon State University (OSU) as they were able to continue labwork during the pandemic.
 
 This amplification protocol is accessible to most molecular biology labs.
 
 ### Spatial Coverage and Environment(s) of Relevance
 
-This protocol has been used to amplify extracted DNA from thousands of filtered sea water samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
+This protocol has been standardized by CQLS OSU and been used on hundreds of DNA samples taken from coastal stations off the western coast of North America in the Northeastern Pacific Ocean, Bering Sea and Arctic Ocean (primarily off California, Oregon, Washington, and Alaska). Samples collected range in depth from surface ocean (epipelagic biome) to just off bottom (benthic biome) at varying distances from shore (coastal to off-shelf).
 
 ### Personnel Required
 
@@ -175,7 +176,7 @@ Molecular biology training (including, at a minimum, sterile technique, pipettin
 
 ### Time Needed to Execute the Procedure
 
-PCR preparation and running the PCR protocol for a single 96-well plate takes 3.5 hours (210 minutes), 120 mins of which is the thermocycler run time. Additional plates can be run simultaneously without greatly increasing the time required. 
+PCR preparation, running the PCR protocol, and PCR clean-up for a single 96-well plate takes 3 hours (180 minutes), 45 mins of which is the thermocycler run time. Additional plates can be run simultaneously without greatly increasing the time required. 
 
 ## EQUIPMENT
 
@@ -209,7 +210,7 @@ For a 96-well Plate:
 |Fridge| Refrigerator capable of reaching and maintaining 4°C|Generic|1|Used to store some PCR reagents **NOTE: A separate fridge should be used to hold PCR products if possible.**|
 |Trash bag holder|Bel-Art scienceware bench-top biohazard holders|Fisher Scientific|1|Can be substituted with generic|
 |Cryoboxes|TruCool hinged lid cryoboxes|VWR|2| Can be substituted with generic - must be sterilized before use |
-|BluePippin|BluePippin System BLU0001|Sage Science|1| |
+| Qubit | Qubit™ 3 Flurometer| Thermo Scientific | 1|Can be substituted with any version |
 | **Consumable equipment** |
 | 1000 μL pipette tips | TipOne RPT filter tips 1000 μL XL graduated | USA Scientific | 4 | Can be subsituted with generic - must be sterile and filtered |
 | 200 μL pipette tips  | TipOne RPT filter tips 200 μL graduated| USA Scientific |4 | Can be subsituted with generic - must be sterile and filtered |
@@ -218,6 +219,7 @@ For a 96-well Plate:
 | PCR aluminum foil | Adhesive sterile PCR foil seals | VWR| 2 | Can be substituted with generic - must be sterile |
 | 2 mL tubes | Snap cap DNA LoBind 2.0 mL tubes, PCR-clean| Eppendorf |5 | Can be substituted with generic - must be sterile |
 | 1.5 mL tubes | Snap cap DNA LoBind 1.5 mL tubes, PCR-clean| Eppendorf |2 | Can be substituted with generic - must be sterile |
+| Qubit assay tubes | 500 μL thin-walled qubit polypropylene tubes| Thermo Scientific | 96 | |
 | Kimwipes | Delicate task wipes | Kimtech | 5 | |
 | Nitrile gloves | Powder Free Nitrile Gloves | Fisher Scientific | 4 | Can be subsituted with generic nitrile gloves. Does not come sterile, must be sterilized before use (10% bleach followed by 70% EtOH) |
 |Trash bags for BSC|Teivio 1.2 Gallon 360 Counts Strong Trash Bags|Teivio|1|Can be substituted with generic|
@@ -228,24 +230,28 @@ For a 96-well Plate:
 | 300 μl repeater pipette tips | ClipTip 300 filtered sterile tips| Thermo Scientific| 2| Can be substituted with generic. Must fit repeater pipette. Must be sterile and filtered. |
 |8-channel multichannel pipetter: 1-10 μL| Pipetman Multichannel P8X10|	Gilson|	1|Can be substituted with generic. Not required but reduces protocol time.|
 | UV crosslinker | UV crosslinker AH (115V), 234100 | Boekel Scientific  | 1 | Can be substituted with generic - recommended not required |
+|BluePippin|BluePippin System BLU0001|Sage Science|1|Can be substituted with AMPure XP beads for PCR clean-up - additional materials required but not listed |
 | **Chemicals** |
 | PCR master mix 2x | 2x KAPA HiFi HotStart ReadyMix | Roche Diagnostics | 1300 μl per plate | Store at -20°C |
 | Forward primer | Custom oligo | IDT |520 μl per plate| Store at -20°C|
 | Reverse primer| Custom oligo | IDT | 520 μl per plate | Store at -20°C|
 | Camel Positive control| Zyagen Labs CAMEL control genomic DNA, in TE buffer | IDT | 2 μl per plate | Store at -20°C |
 | Ferret Positive control| Zyagen Labs FERRET control genomic DNA, in TE buffer | IDT | 2 μl per plate | Store at -20°C |
+| Qubit HS Buffer | Qubit dsDNA HS Reagent | Thermo Scientific | 100 μl per plate | |
+| Qubit HS Reagent | Qubit dsDNA HS Buffer| Thermo Scientific | 20 mL per plate||
+| Qubit HS S1 | Qubit™ dsDNA HS Standard #1 | Thermo Scientific | 10 μl per plate| |
+| Qubit HS S2 | Qubit™ dsDNA HS Standard #2 | Thermo Scientific | 10 μl per plate| |
 | 10 mM Tris | 10 mM Tris pH 8.5 | Fisher Scientific | 5040 μl per plate (for clean-up) | Store at -20°C|
 | AMPure beads | AMPure XP beads | Fisher Scientific | 1920 μl per plate (for clean-up) | Store at fridge|
 | 70% EtOH | Molecular grade ethanol| Generic | 40 mL |
 | 10% bleach| Hypochlorite bleach |Clorox| 40 mL | Remake every ~5 days as bleach decomposes quickly at 10% concentration |
-
 
 ## STANDARD OPERATING PROCEDURE
 
 ### Preparation
 
 1. Sterilize workspaces and durable equipment, including pipettes with 10% bleach. Then wipe down all surfaces and equipment with 70% EtOH.
-2. Label all PCR plates both on the side of the plate and on the top of the foil (in the plate margins). Recommended labeling scheme includes plate name, primer, date of PCR, and personnel initials.
+2. Label all PCR plates both on the side of the plate and on the top of the foil (in the plate margins).
 
 ### PCR
 
@@ -296,7 +302,7 @@ This table breaks down the mixture per plate and per reaction. When running full
 3. Pool reagents to make final master mix, as denoted in above in reagent mixture table.
 4. Set out template DNA to thaw if frozen.
 5. Aliquot 22.5 μL of final master mix into each well of the PCR plate. The plate should sit in a cold block to ensure the reagents remain at a low temperature.
-6. Add 2.5 μL DNA template to each well. If input gDNA was > 10ng/µL, it was diluted to 1:3. (See [Machida Metazoan 18S V8 PCR Protocol Sheet Draft](https://docs.google.com/spreadsheets/d/14exlweJkmsPSTahdmubbECPgm2iUhXlben1yksLek1Y/edit#gid=1701210116)), but reserve two wells for the positive control and a no template control (NTC). 
+6. Add 2.5 μL DNA template to each well. If input gDNA was > 10ng/µL, it was diluted to 1:3, but reserve two wells for the positive control and a no template control (NTC). 
 7. To one well each, add 2.5 μL of the positive control and 2.5 μL of nuclease-free water for the NTC.
 8. Seal the PCR plate with foil.
 9. Spin down the plate, and then transport in cooler blocks before placing in thermocycler.
@@ -305,7 +311,8 @@ This table breaks down the mixture per plate and per reaction. When running full
 
 ### Quality control
 
-1. Plates should be removed from the thermocycler  after the run completes and stored at 4°C until run on a gel. Storing the PCR product at -20˚C is ideal for 1-6 month term storage, while -80˚C is ideal for long-term storage.
+1. Plates should be removed from the thermocycler after the run completes and stored at 4°C until run on a gel. Storing the PCR product at -20˚C is ideal for 1-6 month term storage, while -80˚C is ideal for long-term storage.
+2. Qubit quantification was used to test the success of the amplicon amplification. CQLS OSU followed the standard (Qubit dsDNA HS Assay Kit protocol)[https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_dsDNA_HS_Assay_UG.pdf] by ThermoFisher.
 
 ### PCR Clean-up
 
