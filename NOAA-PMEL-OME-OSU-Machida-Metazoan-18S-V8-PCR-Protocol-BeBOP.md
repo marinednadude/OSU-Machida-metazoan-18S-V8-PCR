@@ -9,7 +9,7 @@ broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic z
 local_environmental_context: oceanic epipelagic zone biome [ENVO:01000035], marine benthic biome [ENVO:01000024]
 environmental_medium: 'sea water [ENVO:00002149]'
 target: '18S Ribosomal RNA [NCIT:C48172]'
-creator: 'Shannon Brown and Zachary Gold'
+creator: 'Shannon Brown, Zachary Gold'
 materials_required: 'vortexer [OBI:0400118], PCR instrument [OBI:0000989]'
 skills_required: 'sterile technique, pipetting skills, and standard molecular technique'
 time_required: 180
