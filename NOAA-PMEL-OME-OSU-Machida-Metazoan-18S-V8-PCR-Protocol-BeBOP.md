@@ -28,7 +28,7 @@ inhibition_check_0_1: not applicable
 inhibition_check: not applicable
 thermocycler: Generic thermal cycler
 assay_name: ssu18sv8_machida_OSUmod
-assay_validation: This assay was validated by Oregon State University's Center for Quantitative Life Sciences via mutli-step in-silico, in-vitro, and in-situ validations 
+assay_validation: This assay was validated by Oregon State University's Center for Quantitative Life Sciences via mutli-step in-silico, in-vitro, and in-situ validations.
 targetTaxonomicAssay: "18S rRNA gene sequencing targeting the V8 region using primers Machida 18S #3 F and Machida 18S #5 R"
 targetTaxonomicScope: metazoan organisms
 target_gene: 18S
@@ -62,7 +62,7 @@ pcr_cond: initial denaturation:95_3;normal_cycling;denaturation:95_0.5;annealing
 annealingTemp: 55
 pcr_cycles: 25
 pcr_analysis_software: missing":" not provided
-pcr_method_additional: Quality was validated via confirmation of a product on a gel.
+pcr_method_additional: Quality was validated via a Qubit Fluorometer.
 ---
 
 # NOAA PMEL OME Machida Metazoan 18S V8 PCR Protocol
@@ -192,8 +192,9 @@ For a 96-well Plate:
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment**|
 |Pipetter: 1-10 μl|P10|Generic Brand|1||
-|Pipetter: 20 - 200 μL	| P200|Generic Brand|	1||
-|Pipetter: 100-1000 μL	| P1000	|Generic Brand	|1||
+|Pipetter: 2 - 20 μL| P20|Generic Brand|	1||
+|Pipetter: 20 - 200 μL| P200|Generic Brand|	1||
+|Pipetter: 100-1000 μL| P1000	|Generic Brand	|1||
 |Thermocycler| |Generic Brand| 1|	|
 | Mini-centrifuge | Personal mini centrifuge  | Generic Brand | 1 | Needs to fit 1.5-2.0 mL tubes |
 | Vortex | Benchtop vortex mixer | Generic Brand | 1 | |
@@ -210,11 +211,11 @@ For a 96-well Plate:
 | Magnetic Stand-96 | | Generic Brand | 1||
 | **Consumable equipment** |
 | 1000 μL pipette tips | | Generic Brand | 4 | Recommend sterile and filtered |
-| 200 μL pipette tips  | | Generic Brand | 250| Recommend sterile and filtered |
+| 200 μL pipette tips  | | Generic Brand | 350| Recommend sterile and filtered |
 | 20 μL pipette tips  | | Generic Brand | 105| Recommend sterile and filtered |
-| 10 μL pipette tips  | | Generic Brand | 196 | Recommend sterile and filtered |
+| 10 μL pipette tips  | | Generic Brand | 194 | Recommend sterile and filtered |
 | PCR plates | LoBind PCR plates, semi-skirted (96-wells)| Eppendorf | 2 | |
-| PCR aluminum foil | Adhesive sterile PCR foil seals | Generic Brand | 2 | Must be sterile |
+| PCR aluminum foil | Adhesive sterile PCR foil seals | Generic Brand | 5 | Must be sterile |
 | 2 mL tubes | DNA LoBind 2.0 mL tubes, PCR-clean| Generic Brand |5 | Must be sterile |
 | 1.5 mL tubes | DNA LoBind 1.5 mL tubes, PCR-clean| Generic Brand |2 | Must be sterile |
 | 15 mL falcon tube | | Generic Brand |1 |  |
@@ -302,6 +303,17 @@ This table breaks down the mixture per plate and per reaction. When running full
 
 Qubit quantification was used to test the success of the amplicon amplification. CQLS OSU followed the standard [Qubit dsDNA HS Assay Kit protocol](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_dsDNA_HS_Assay_UG.pdf) by ThermoFisher.
 
+#### Positive Control
+A positive control is used in every PCR run to verify success of the PCR reaction. 2μL of both Camel and Ferret positive control at 0.5mg/ml were used in place of template DNA. One well per plate per positive control is alotted. 
+
+[Zyagen Camel Genomic DNA (Cat_No:GC-270)](https://www.zyagen.com/product/camel-genomic-dna/)
+
+[Zyagen Ferret Genomic DNA (Cat_No:GF-180)](https://www.zyagen.com/product/ferret-genomic-dna/)
+
+#### Negative Control
+
+Nuclease-free water is used as a NTC when setting up each PCR plate. One well per plate is alloted to a NTC. NTCs should be run in addition to both field blanks and extraction blanks.
+
 ### PCR Clean-up
 
 Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, if available, BluePippin size selection was used to purify the amplicon. When unavailable, the below protocol was AMPure XP beads was used.
@@ -320,17 +332,6 @@ Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, if avail
 12. Gently pipette mix up and down 10 times, changing tips after each column. Make sure that beads are fully resuspended. Incubate at room temperature for 2 minutes.
 13. Place the plate on the magnetic stand for 2 minutes or until the supernatant has cleared.
 14. Using a multichannel pipette, carefully transfer 50 µl of the supernatant from the amplicon PCR plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
-
-#### Positive Control
-A positive control is used in every PCR run to verify success of the PCR reaction. 2μL of both Camel and Ferret positive control at 0.5mg/ml were used in place of template DNA. One well per plate per positive control is alotted. 
-
-[Zyagen Camel Genomic DNA (Cat_No:GC-270)](https://www.zyagen.com/product/camel-genomic-dna/)
-
-[Zyagen Ferret Genomic DNA (Cat_No:GF-180)](https://www.zyagen.com/product/ferret-genomic-dna/)
-
-#### Negative Control
-
-Nuclease-free water is used as a NTC when setting up each PCR plate. One well per plate is alloted to a NTC. NTCs should be run in addition to both field blanks and extraction blanks.
 
 ### Basic Troubleshooting Guide
 
