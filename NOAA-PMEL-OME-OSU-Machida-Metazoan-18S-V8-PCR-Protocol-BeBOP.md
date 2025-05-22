@@ -300,7 +300,7 @@ This table breaks down the mixture per plate and per reaction. When running full
 
 ### Quality control
 
-Qubit quantification was used to test the success of the amplicon amplification. CQLS OSU followed the standard (Qubit dsDNA HS Assay Kit protocol)[https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_dsDNA_HS_Assay_UG.pdf] by ThermoFisher.
+Qubit quantification was used to test the success of the amplicon amplification. CQLS OSU followed the standard [Qubit dsDNA HS Assay Kit protocol](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_dsDNA_HS_Assay_UG.pdf) by ThermoFisher.
 
 ### PCR Clean-up
 
