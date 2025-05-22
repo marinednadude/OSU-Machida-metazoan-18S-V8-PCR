@@ -324,9 +324,9 @@ Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, if avail
 #### Positive Control
 A positive control is used in every PCR run to verify success of the PCR reaction. 2μL of both Camel and Ferret positive control at 0.5mg/ml were used in place of template DNA. One well per plate per positive control is alotted. 
 
--[Zyagen Camel Genomic DNA (Cat_No:GC-270)](https://www.zyagen.com/product/camel-genomic-dna/)
+[Zyagen Camel Genomic DNA (Cat_No:GC-270)](https://www.zyagen.com/product/camel-genomic-dna/)
 
--[Zyagen Ferret Genomic DNA (Cat_No:GF-180)](https://www.zyagen.com/product/ferret-genomic-dna/)
+[Zyagen Ferret Genomic DNA (Cat_No:GF-180)](https://www.zyagen.com/product/ferret-genomic-dna/)
 
 #### Negative Control
 
