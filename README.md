@@ -1,4 +1,6 @@
 # OSU-Machida-metazoan-18S-V8-PCR-Protocol-BeBOP
+NOTE: This is NOT THE RECOMMENDED Machida 18S V8 PCR protocol, for the standard OME protocol, see [NOAA-PMEL-OME-Machida-Metazoan-18S-V8-PCR-Protocol-BeBOP.md](https://github.com/marinednadude/NOAA-PMEL-OME-Machida-Metazoan-18S-V8-PCR-Protocol-BeBOP/blob/main/NOAA-PMEL-OME-Machida-Metazoan-18S-V8-PCR-Protocol-BeBOP.md).
+
 See [OSU-Machida-metazoan-18S-V8-PCR-Protocol-BeBOP](https://github.com/marinednadude/OSU-Machida-metazoan-18S-V8-PCR/blob/main/NOAA-PMEL-OME-OSU-Machida-Metazoan-18S-V8-PCR-Protocol-BeBOP.md) for detailed protocol.  
 
 ## Disclaimer
