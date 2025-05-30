@@ -61,7 +61,7 @@ nucl_acid_amp:
 pcr_cond: initial denaturation:95_3;normal_cycling;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;25
 annealingTemp: 55
 pcr_cycles: 25
-pcr_analysis_software: missing":" not provided
+pcr_analysis_software: "missing: not provided"
 pcr_method_additional: Quality was validated via a Qubit Fluorometer.
 ---
 
