@@ -15,7 +15,7 @@ skills_required: 'sterile technique, pipetting skills, and standard molecular te
 time_required: 180
 personnel_required: 1
 language: en
-issued: '2025-05-29'
+issued: '2025-06-10'
 audience: 'scientists'
 publisher: 'NOAA Pacific Marine Environmental Laboratory Ocean Molecular Ecology Group; University of Washington Cooperative Institute for Climate, Ocean, & Ecosystem Studies'
 hasVersion: 1
@@ -36,8 +36,8 @@ target_subfragment: V8
 ampliconSize: 380
 pcr_primer_forward: GYGGTGCATGGCCGTTSKTRGTT
 pcr_primer_reverse: GTGTGYACAAAGGBCAGGGAC
-pcr_primer_name_forward: Machida_18S V78 F
-pcr_primer_name_reverse: Machida_18S V78 R
+pcr_primer_name_forward: Machida_18S V7 F
+pcr_primer_name_reverse: Machida_18S V7 R
 pcr_primer_reference_forward: https://doi.org/10.1371/journal.pone.0134314
 pcr_primer_reference_reverse: https://doi.org/10.1371/journal.pone.0134314
 pcr_primer_vol_forward: 5.0
@@ -56,8 +56,8 @@ block_ref: not applicable
 block_taxa: not applicable
 amplificationReactionVolume: 25
 pcr_dna_vol: 2.0
-pcr_rep: 1.0
-nucl_acid_amp:
+pcr_rep: 3.0
+nucl_acid_amp: 
 pcr_cond: initial denaturation:95_3;normal_cycling;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;25
 annealingTemp: 55
 pcr_cycles: 25
@@ -115,7 +115,7 @@ pcr_method_additional: Quality was validated via a Qubit Fluorometer.
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-05-01 | Initial release |
-| 1.1.0 | 2025-05-29 | Content revisions, format editing, and FAIRe updates |
+| 1.1.0 | 2025-06-10 | Content revisions, format editing, and FAIRe updates |
 
 ### Acronyms and Abbreviations
 
@@ -263,13 +263,15 @@ For a 96-well Plate:
 |Machida_18S V78 F | Forward |**GYGGTGCATGGCCGTTSKTRGTT** |
 | Machida_18S V78 R | Reverse | **GTGTGYACAAAGGBCAGGGAC** |
 
+Forewarning, [Machida & Nowlton 2012](https://doi.org/10.1371/journal.pone.0046180) published an erratum fixing primer orientation, but we have confirmed that these sequences are correct.
+
 **Reaction Mixture**: PCR reagents, volumes, initial, and final concentrations
 
 | Reagent |Volume (μL) per plate| Volume (μL) per reaction | Intial concentration| Final concentration|
 | ----- | ----- | ----- |----- |-----|
-|2x KAPA HiFi HotStart Ready Mix  |1300|  12.5|100% | 50%|
-| Forward Primer| 520| 5|1 μM | 5 μM |
-| Reverse Primer |520| 5|1 μM |5 μM |
+|2x KAPA HiFi HotStart Ready Mix  |1300|  12.5|200% | 100%|
+| Forward Primer| 520| 5|1 μM | 0.2 μM |
+| Reverse Primer |520| 5|1 μM |0.2 μM |
 | Template DNA|N/A| 2.5 | 100%|10% |
 | **Total**|**2340**| **25** | **N/A** |**N/A**|
 
@@ -296,7 +298,7 @@ This table breaks down the mixture per plate and per reaction. When running full
 3. Pool reagents to make final master mix, as denoted in the reagent mixture table.
 4. Set out template DNA to thaw if frozen.
 5. Aliquot 22.5 μL of final master mix into each well of the PCR plate. The plate should sit in a cold block to ensure the reagents remain at a low temperature.
-6. Add 2.5 μL DNA template to each well. If input DNA was > 10ng/µL, dilute to 1:3. Reserve two wells for the positive control and a no template control (NTC). 
+6. Add 2.5 μL DNA template to each well. If input DNA was > 10ng/µL, dilute 1:3. Reserve two wells for the positive control and a no template control (NTC). 
 7. To one well each, add 2.5 μL of the positive control and 2.5 μL of nuclease-free water for the NTC.
 8. Seal the PCR plate with foil.
 9. Spin down the plate and then transport in cooler blocks before placing in thermocycler.
@@ -320,7 +322,7 @@ Nuclease-free water is used as a NTC when setting up each PCR plate. One well pe
 
 ### PCR Clean-up
 
-Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, if available, BluePippin size selection was used to purify the amplicon. When unavailable, the below protocol was AMPure XP beads was used.
+Due to primer dimer (shorter 170 bp peak) with the main target ~500 bp, size selection using Option A (BluePippin) or Option B (MagBead Cleanup) was used to purfy the amplicon. The below protocol details the protocol for Option B.
 
 1. Centrifuge the amplicon PCR plate at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
 2. Vortex the AMPure XP beads for 30 seconds to make sure that the beads are evenly dispersed. Add an appropriate volume of beads to a trough depending on the number of samples processing.
