@@ -36,8 +36,8 @@ target_subfragment: V8
 ampliconSize: 380
 pcr_primer_forward: GYGGTGCATGGCCGTTSKTRGTT
 pcr_primer_reverse: GTGTGYACAAAGGBCAGGGAC
-pcr_primer_name_forward: Machida_18S V7 F
-pcr_primer_name_reverse: Machida_18S V7 R
+pcr_primer_name_forward: Machida_18S V8 F
+pcr_primer_name_reverse: Machida_18S V8 R
 pcr_primer_reference_forward: https://doi.org/10.1371/journal.pone.0134314
 pcr_primer_reference_reverse: https://doi.org/10.1371/journal.pone.0134314
 pcr_primer_vol_forward: 5.0
@@ -260,8 +260,8 @@ For a 96-well Plate:
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
-|Machida_18S V78 F | Forward |**GYGGTGCATGGCCGTTSKTRGTT** |
-| Machida_18S V78 R | Reverse | **GTGTGYACAAAGGBCAGGGAC** |
+|Machida_18S V8 F | Forward |**GYGGTGCATGGCCGTTSKTRGTT** |
+| Machida_18S V8 R | Reverse | **GTGTGYACAAAGGBCAGGGAC** |
 
 Forewarning, [Machida & Nowlton 2012](https://doi.org/10.1371/journal.pone.0046180) published an erratum fixing primer orientation, but we have confirmed that these sequences are correct.
 
